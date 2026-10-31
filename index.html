@@ -36,10 +36,10 @@ body{position:relative;width:100%;height:var(--vh);min-height:100%}
 .stage{position:fixed;inset:0;overflow:hidden;background:var(--bg)}
 .scene{position:absolute;left:50%;top:50%;width:calc(1280 * var(--sc));height:calc(800 * var(--sc));transform:translate(-50%,-50%)}
 .scene>img,.scene>svg{position:absolute;inset:0;width:100%;height:100%;display:block}
-.scene>img{object-fit:cover;user-select:none;-webkit-user-drag:none}
+.scene>img{object-fit:cover;filter:brightness(1.13) contrast(1.10) saturate(1.12);user-select:none;-webkit-user-drag:none}
 .rings path{fill:none;stroke:var(--ring);stroke-width:1.65;stroke-linecap:round;filter:drop-shadow(0 1px 3px rgba(0,0,0,.85))}
 .title{position:absolute;left:0;width:calc(635 * 2 * var(--sc));top:calc(378 * var(--sc));
-  font:400 calc(46 * var(--sc))/1 var(--sans);font-kerning:none;letter-spacing:-0.01em;color:var(--ink);text-align:center;white-space:nowrap}
+  font:700 calc(46 * var(--sc))/1 var(--sans);font-kerning:none;letter-spacing:0.015em;color:#fff;text-align:center;white-space:nowrap;text-shadow:0 2px 5px rgba(0,0,0,.72),0 0 16px rgba(255,255,255,.24),0 0 30px rgba(255,255,255,.12)}
 .title span{display:inline-block;margin-left:calc(var(--k,0) * var(--sc))}
 .ui{position:absolute;inset:0;pointer-events:none}
 .ui>*{pointer-events:auto}
