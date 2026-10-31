@@ -1,6 +1,11 @@
 {
-  "name": "PARALLAX — Every spark is a fresh impact",
-  "description": "PARALLAX — Every spark is a fresh impact",
+  "name": "Yoza — Anime Artist & Illustrator",
+  "description": "Portfolio and introduction for Yoza, an anime artist creating expressive character illustrations, original character concepts, fan art, manga-inspired artwork and cover illustrations.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "Artist portfolio",
+    "Anime illustration",
+    "Character art",
+    "Commission enquiries"
+  ]
 }
