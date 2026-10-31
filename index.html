@@ -63,24 +63,13 @@ a:focus-visible,button:focus-visible{outline:2px solid #fff;outline-offset:3px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (orientation:portrait) and (min-width:561px){ :root{ --u:clamp(.72px, calc(var(--vw) / 860), 1.6px); } }
 @media (max-width:560px){
-  :root{ --u:clamp(.72px, calc(var(--vw) / 470), 1px); --sc:min(calc(var(--vw) / 1280),calc(var(--vh) / 800)); }
-  html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
-  body{height:auto;min-height:100svh}
-  .stage{position:relative;min-height:100svh;height:100svh;overflow:hidden}
-  .scene{position:absolute;left:0;top:0;width:100%;height:100%;transform:none}
-  .scene>img{object-fit:cover;object-position:center}
-  .scene>svg{width:100%;height:100%;preserveAspectRatio:xMidYMid slice}
-  .title{left:50%;top:48%;width:auto;transform:translate(-50%,-50%);font-size:clamp(42px,13vw,66px);text-shadow:0 3px 16px rgba(0,0,0,.8)}
-  .nav{left:16px;right:16px;top:16px;width:auto;height:54px;transform:none;padding:0 12px;background:rgba(0,0,0,.86)}
-  .logo{font-size:34px}
-  .menu{width:38px;height:34px}
-  .copy{font-size:10px;line-height:1.45;white-space:normal;max-width:44%;padding:7px 9px;background:rgba(0,0,0,.62);border:1px solid rgba(255,255,255,.28);border-radius:2px}
-  .copy--tl{left:16px;top:86px}
-  .copy--tr{right:16px;top:86px}
-  .copy--bl{left:16px;bottom:16px}
-  .copy--br{right:16px;bottom:16px;text-align:right}
-  .ctas{left:50%;bottom:82px;transform:translateX(-50%);flex-direction:row;gap:9px}
-  .btn{width:auto;min-width:126px;height:42px;padding:0 13px;font-size:11px;background:rgba(0,0,0,.9);border:1px solid rgba(255,255,255,.55)}
+  :root{ --u:clamp(.72px, calc(var(--vw) / 470), 1px); }
+  .nav{left:calc(20 * var(--u));right:calc(20 * var(--u));width:auto;transform:none;top:calc(20 * var(--u))}
+  .copy--tl{left:calc(20 * var(--u));top:calc(96 * var(--u))}
+  .copy--tr{right:calc(20 * var(--u));top:calc(96 * var(--u))}
+  .copy--bl{left:calc(20 * var(--u));bottom:calc(24 * var(--u))}
+  .ctas{left:calc(20 * var(--u));bottom:calc(76 * var(--u))}
+  .copy--br{right:calc(20 * var(--u));bottom:calc(24 * var(--u))}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 .ln{display:block}
